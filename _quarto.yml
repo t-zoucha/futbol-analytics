@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "Futbol-Analytics"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: convex-voroni.qmd
+        text: Convexhull & Voroni
+      - href: about.qmd
+        text: About
+        
+      
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

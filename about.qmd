@@ -1,0 +1,36 @@
+---
+title: "About"
+---
+
+## Breaking Down Defensive Formations with Convex Hull
+
+The Convex Hull analysis provides a revolutionary way to understand how teams and players occupy and control space on the field. Imagine drawing a rubber band around a group of players – the shape it forms is the convex hull. This mathematical concept helps us:
+
+- Measure the effective defensive coverage area
+- Identify gaps in defensive formations
+- Analyze team compactness and expansion
+- Track how defensive shapes change throughout the game
+
+By analyzing these patterns, teams can better understand their defensive positioning and identify opportunities to exploit opposing team formations.
+
+## Creating Opportunities with Voronoi Diagrams
+
+Voronoi diagrams take spatial analysis to the next level by dividing the playing field into regions of influence. Each region represents the area where a player has the most control compared to all other players. This analysis helps in:
+
+- Understanding player dominance in specific areas
+- Identifying optimal passing lanes
+- Recognizing space creation opportunities
+- Analyzing territorial control during different phases of play
+
+Through Voronoi analysis, we can quantify which team is controlling more valuable space and identify tactical adjustments to create better scoring opportunities.
+
+## Our Approach
+
+This website combines theoretical knowledge with practical applications, providing:
+
+- Detailed explanations of spatial analysis concepts
+- Real-game examples and case studies
+- Interactive visualizations
+- Practical tools and techniques for analysts and coaches
+
+Whether you're a coach, analyst, or enthusiast, our goal is to help you better understand and apply these powerful spatial analysis concepts to enhance your game understanding and strategic planning.

@@ -1,0 +1,60 @@
+---
+title: "Spacial Awareness"
+format: html
+editor: visual
+---
+
+## Why Spatial Analysis Matters
+
+Modern sports are increasingly about space creation and control. Understanding these spatial concepts gives teams and analysts powerful tools to:
+
+1. Develop more effective tactical strategies
+2. Identify weaknesses in opposing team formations
+3. Train players to better recognize spatial opportunities
+4. Make data-driven decisions during matches
+
+## Convexhull
+
+Imagine stretching a rubber band around your team's defenders - that's essentially what a Convex Hull shows us!
+
+- The colored shape that wraps around the outermost players
+- How this shape expands and contracts as players move
+- The total area the defense is effectively covering
+
+What This Tells Us:
+- How compact or spread out your defense is
+- The spaces attackers might exploit
+- How well your team maintains its defensive shape
+
+```{r}
+
+#| label: Convexhull
+
+soccer_animate(td, 480, 490, "convexhull", export_gif = T, gif_name = "convexhull.gif")
+
+```
+
+## Voroni
+
+Ever wondered how much space each player "owns" on the field?
+
+- Each player has their own "territory" shown by different colors
+- These territories constantly change as players move
+- The boundaries show where one player's influence ends and another's begins
+
+What This Tells Us:
+- Which team controls more of the field
+- Where there might be space to pass or move into
+- How well positioned players are relative to each other
+
+It's like each player has their own personal bubble, and these bubbles adjust in real-time based on everyone's position.
+
+```{r}
+
+#| label: Voroni
+
+soccer_animate(td, 2112, 2122, "voronoi", export_gif = T, gif_name = "voronoi.gif")
+
+```
+
+

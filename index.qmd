@@ -1,0 +1,65 @@
+---
+title: "Futbol"
+author: "Tyler Zoucha"
+
+execute: 
+  echo: false
+---
+
+## Welcome to Futbol Analytics
+
+Hello everyone! I'm Tyler Zoucha, and I have had an extremely long and successful career in the Futbol industry. From my earliest steps to playing at the professional level in Spain and Portugal, the beautiful game has been my constant companion and has given me so much. Throughout my career, I've developed a deep understanding of Futbol knowledge and life knowledge, both on and off the pitch.
+
+## Understanding Space in Sports Analytics
+
+Welcome to our exploration of spatial awareness in sports analytics. This website focuses on advanced analytical techniques that help understand and leverage space in competitive sports, particularly focusing on two powerful concepts: Convex Hull and Voronoi diagrams.
+
+
+```{r}
+
+#| label: setup
+
+library(tidyverse)
+library(soccerAnimate)
+library(tidyr)
+library(dbplyr)
+library(tutorial.helpers)
+
+# install.packages("remotes")
+remotes::install_github("Dato-Futbol/soccerAnimate")
+library(soccerAnimate)
+home_team_file <- "https://raw.githubusercontent.com/metrica-sports/sample-data/master/data/Sample_Game_2/Sample_Game_2_RawTrackingData_Home_Team.csv"
+away_team_file <- "https://raw.githubusercontent.com/metrica-sports/sample-data/master/data/Sample_Game_2/Sample_Game_2_RawTrackingData_Away_Team.csv"
+td <- get_tidy_data(home_team_file, away_team_file)
+
+```
+
+## Static Frame Analysis
+
+In the static snapshot, we observe a critical moment frozen in time. a setup that would eventually lead to a scoring opportunity.
+
+```{r}
+
+#| label: Static
+
+soccer_plot(tidy_data = td, target_frame = 12212, export_png = T)
+
+```
+
+## Dynamic Sequence
+
+The animation brings this sequence to life, revealing how the static positions evolved into dynamic movement. Over these frames, we witness:
+
+- The initial tactical setup
+- Player movements unfolding in real-time
+- The flow of play developing
+- And a scoring opportunity 
+
+```{r}
+
+#| label: Dynamic
+
+soccer_animate(td, 480, 490, "base", export_gif = T)
+
+```
+
