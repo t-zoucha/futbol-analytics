@@ -2,8 +2,7 @@
 title: "Futbol"
 author: "Tyler Zoucha"
 
-execute: 
-  echo: false
+
 ---
 
 ## Welcome to Futbol Analytics

@@ -2,11 +2,8 @@
 title: "Futbol"
 author: "Tyler Zoucha"
 
-execute: 
-  echo: false
+
 ---
-
-
 
 
 
@@ -17,8 +14,6 @@ Hello everyone! I'm Tyler Zoucha, and I have had an extremely long and successfu
 ## Understanding Space in Sports Analytics
 
 Welcome to our exploration of spatial awareness in sports analytics. This website focuses on advanced analytical techniques that help understand and leverage space in competitive sports, particularly focusing on two powerful concepts: Convex Hull and Voronoi diagrams.
-
-
 
 
 
@@ -44,13 +39,9 @@ td <- get_tidy_data(home_team_file, away_team_file)
 
 
 
-
-
 ## Static Frame Analysis
 
 In the static snapshot, we observe a critical moment frozen in time. a setup that would eventually lead to a scoring opportunity.
-
-
 
 
 
@@ -64,8 +55,6 @@ soccer_plot(tidy_data = td, target_frame = 12212, export_png = T)
 
 
 
-
-
 ## Dynamic Sequence
 
 The animation brings this sequence to life, revealing how the static positions evolved into dynamic movement. Over these frames, we witness:
@@ -74,8 +63,6 @@ The animation brings this sequence to life, revealing how the static positions e
 - Player movements unfolding in real-time
 - The flow of play developing
 - And a scoring opportunity 
-
-
 
 
 
